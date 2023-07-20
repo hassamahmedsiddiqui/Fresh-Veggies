@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+
+body {
+    width: 100%;
+    height: 2750px;
+    background: #F7F8F8;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #daf0da, #F7F8F8);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #daf0da, #F7F8F8);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* object-fit: contain; */
+
+}
+
+/*NavBar Name & Items Styling  */
+.nav-name {
+    font-family: 'poppins';
+}
+
+.nav-name span {
+    font-size: larger;
+}
+
+.nav-item {
+    font-family: 'poppins';
+    padding: 0px 70px;
+}
+
+.nav-item :hover {
+    color: #2d7705 !important;
+    letter-spacing: 2px;
+    /* text-decoration: underline; */
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+
+}
+
+/* NavBar Button Styling   */
+.contact-us {
+    text-decoration: none;
+    /* font-family:"poppins",sans-serif; */
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+.cta {
+    border: none;
+    background: none;
+    margin-left: -225px;
+    font-size: 14px !important;
+    font-weight: 700;
+
+}
+
+.cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+
+.cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active svg {
+    transform: scale(0.9);
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #379503;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/*  Banner Section Styling */
+
+
+.banner-left-section {
+    position: relative;
+
+}
+
+.rec-chilli-image {
+    position: absolute;
+    left: 313px;
+    top: -49px;
+    opacity: 3.8;
+    /* z-index: -1; */
+
+}
+
+.banner-left-section {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+
+}
+
+.banner-left-section h1 span {
+    font-family: 'Freehand';
+    font-style: normal;
+    font-weight: bold;
+    color: #2d7705;
+}
+
+.banner-left-section p {
+    font-family: "poppins";
+    letter-spacing: 3px;
+    color: #4d5156;
+    font-weight: lighter;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+}
+
+/* banner button left section styling */
+
+/* giving margin left property to both buttons for look better */
+.shop-now {
+    margin: 8px !important;
+}
+
+.button {
+    height: 46px;
+    width: 165px;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: "poppins";
+    border: 2px solid #379503;
+    overflow: hidden;
+    border-radius: 16px;
+    color: #333;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-txt {
+    z-index: 1;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+.type1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    /* background-color: #379503; */
+    background: #DCE35B;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #45B649, #2d7705);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #45B649, #2d7705);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 30px;
+    visibility: hidden;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+}
+
+.button:hover {
+    /* box-shadow: 1px 1px 200px greenyellow; */
+    color: #fff;
+    border: none;
+    z-index: 1;
+    border: 2px solid #ffffff;
+}
+
+.type1:hover::after {
+    visibility: visible;
+    transform: scale(100) translateX(2px);
+}
+
+/* giving postion to banner section to set svg for large scrreeen */
+.banner {
+    position: relative;
+}
+
+#wave {
+    position: absolute;
+    top: 70px;
+    z-index: -1;
+    width: 100%;
+}
+
+/* subheading styling featured services */
+.sub-heading {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.sub-heading span {
+    color: #379503;
+}
+
+.sub-heading p {
+    color: #4d5156;
+    font-family: "poppins";
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+/* card section under feature services */
+
+.feature-card {
+    height: 160px;
+    width: 160px;
+    border-radius: 16px;
+    border: 1px solid #2d7705;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+}
+
+.feature-card h5 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.feature-card p {
+    font-family: sans-serif;
+}
+
+.feature-card:hover {
+    background: #DCE35B;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #45B649, #2d7705);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #45B649, #2d7705);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: #ffffff;
+    /* border: 1px solid green; */
+}
+
+
+/* sub-heading 2 sttyling */
+.sub-heading2 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.sub-heading2 span {
+    color: #379503;
+}
+
+.gap {
+    width: 100%;
+    color: #2d7705;
+    height: 20px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+
+}
+
+/* products card styling */
+
+.p-card {
+    width: 220px;
+    height: 294px;
+    border-radius: 40px;
+    background: #e7e7e7;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+
+    text-align: center;
+}
+
+/* product card managing data */
+.card-data {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.card-data h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+.rating-img {
+    margin-top: -35px;
+
+    width: 120px;
+}
+
+.card-data h5 {
+    font-family: "poppins";
+    text-transform: capitalize;
+    margin-left: 30px;
+    /* font-weight: 2rem; */
+}
+
+.card-data h5 span {
+    color: red;
+    font-weight: bold;
+    /* padding-left: 10px; */
+}
+
+/* trolly-Button */
+.card-data button {
+    height: 35px;
+    width: 100px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 85px;
+    border-radius: 16px;
+    background-color: transparent;
+    border: none;
+    font-family: "poppins";
+    letter-spacing: 2px;
+
+}
+
+.card-data button:hover {
+    background: #DCE35B;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #45B649, #55ce14);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #45B649, #55ce14);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Fresh Veggies Sales and Customer and farmers and reviews secton styling */
+/* Sales Section */
+.sales {
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.sales p {
+    font-family: 'poppins';
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+
+/* Customer Reviews section cards styling */
+
+.Customer-review-card img {
+    border: 2px solid black;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.Customer-review-card {
+    height: 180px;
+    width: 350px;
+    /* border: 1px solid #379503; */
+    border: none;
+    text-align: center;
+    border-radius: 16px;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.Customer-review-card h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Customer-review-card p {
+    font-family: "poppins";
+    font-size: 14px;
+    /* font-weight: 500 !important; */
+    font-weight: lighter;
+    color: #4d5156;
+}
+
+
+
+
+/* MEDIA QUERIES SECTION */
+@media screen and (max-width: 1150px){
+    .nav-item {
+        padding: 0px 40px;
+    }
+    .banner-left-section {
+        position: relative;
+    
+    }
+    
+    .rec-chilli-image {
+        position: absolute;
+        left: 213px;
+        top: -51px;
+        opacity: 3.8;
+        /* z-index: -1; */
+    
+    }
+
+}
+ 
+@media screen and (max-width: 990px) {
+    /* navbar contact us button */
+    .cta span {
+        padding-left: 235px;
+    }
+    .nav-item{
+        padding: 0px 10px;
+    }
+    
+    #wave{
+        display: none;
+    }
+    
+.shop-now {
+    margin: 5px !important;
+    
+}
+.banner-img{
+    margin-top: 50px;
+    height: 160px !important;
+    width: 380px;
+}
+.banner-left-section {
+    position: relative;
+
+}
+
+.rec-chilli-image {
+    position: absolute;
+    left: 165px;
+    top: -58px;
+    opacity: 3.8;
+    /* z-index: -1; */
+
+}
+
+
+
+}
+@media screen and (max-width: 768px){
+    .shop-now {
+        margin-left: 0px !important;
+    }
+    .banner-img{
+        margin-top: 5px;
+        /* height: 0ox !important; */
+        width: 100%;
+        height: auto;
+    }
+    
+}
